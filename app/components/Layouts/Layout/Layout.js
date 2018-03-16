@@ -1,19 +1,24 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+import { ThemeProvider } from 'styled-components';
 
 import config from '../../../../app.config';
+import theme from '../../../styles/theme.styles';
 import RouteShape from '../../../prop-types/Route';
+import { Main } from './styles';
 
 export const Layout = ({ route, className, children }) => (
-	<Fragment>
-		<Head>
-			<meta name="description" content={route.description || config.description} />
-			<title>{route.title || config.title}</title>
-		</Head>
+	<ThemeProvider theme={theme}>
+		<Fragment>
+			<Head>
+				<meta name="description" content={route.description || config.description} />
+				<title>{route.title || config.title}</title>
+			</Head>
 
-		<main className={className}>{children}</main>
-	</Fragment>
+			<Main className={className}>{children}</Main>
+		</Fragment>
+	</ThemeProvider>
 );
 
 Layout.propTypes = {

@@ -1,0 +1,20 @@
+{
+	"presets": ["next/babel", "env"],
+	"plugins": [
+		"transform-class-properties",
+		"transform-object-assign",
+		"jsx-control-statements"
+	],
+	"env": {
+		"development": {
+			"plugins": [
+				["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
+			]
+		},
+		"production": {
+			"plugins": [
+				["styled-components", { "ssr": true, "displayName": false, "preprocess": true } ]
+			]
+		}
+	}
+}

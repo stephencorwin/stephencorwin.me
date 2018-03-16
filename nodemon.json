@@ -1,0 +1,6 @@
+{
+	"ext": "js json hbs yaml",
+	"watch": ["index.js", "server/**/*"],
+	"ignore": ["node_modules"],
+	"signal": "SIGTERM"
+}

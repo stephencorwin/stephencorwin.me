@@ -1,0 +1,30 @@
+{
+	"root": true,
+	"extends": [
+		"airbnb",
+		"prettier",
+		"plugin:react/recommended",
+		"plugin:jsx-control-statements/recommended"
+	],
+	"plugins": ["react", "jsx-control-statements"],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"react/jsx-indent": "off",
+		"react/jsx-indent-props": "off",
+		"import/no-named-as-default": "off",
+		"react/no-unescaped-entities": "off",
+		"react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+		"jsx-a11y/anchor-is-valid": "off",
+		"react/jsx-no-undef": [2, { "allowGlobals": true }]
+	},
+	"env": {
+		"jsx-control-statements/jsx-control-statements": true
+	}
+}

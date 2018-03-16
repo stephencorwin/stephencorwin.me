@@ -84,5 +84,6 @@ export default {
 	fontSizes,
 	fontWeights,
 	fontFamilies,
-	spacings
+	spacings,
+	shadows
 };

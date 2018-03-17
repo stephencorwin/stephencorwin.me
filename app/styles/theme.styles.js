@@ -74,6 +74,29 @@ export const spacings = {
 	xxl: '100px'
 };
 
+export const breakpoints = {
+	xs: Object.assign(String('0px'), {
+		int: 0,
+		px: '0px',
+		em: '0em'
+	}),
+	sm: Object.assign(String('768px'), {
+		int: 768,
+		px: '768px',
+		em: '48em'
+	}),
+	md: Object.assign(String('1024px'), {
+		int: 1024,
+		px: '1024px',
+		em: '64em'
+	}),
+	lg: Object.assign(String('1200px'), {
+		int: 1200,
+		px: '1200px',
+		em: '75em'
+	})
+};
+
 export const shadows = {
 	default: '0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)',
 	right: '2px 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)'
@@ -85,5 +108,6 @@ export default {
 	fontWeights,
 	fontFamilies,
 	spacings,
+	breakpoints,
 	shadows
 };

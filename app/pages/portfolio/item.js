@@ -23,9 +23,9 @@ export const PortfolioItem = ({
 				})}
 				className={className}
 			>
+				<img src={portfolioItem.images[0]} alt={portfolioItem.label} />
 				<div>{portfolioItem.label}</div>
 				<div>{portfolioItem.description}</div>
-				<img src={portfolioItem.image} alt={portfolioItem.label} />
 			</Default>
 		</When>
 		<Otherwise>

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row } from 'react-styled-flexboxgrid';
 
 import { pages } from '../../../app.config';
 import Default from '../../components/Layouts/Default';
-import Col from '../../components/Col';
+import { Col, Row } from '../../components/Grid';
 import PortfolioTile from '../../components/PortfolioTile';
 import A from '../../components/A';
 

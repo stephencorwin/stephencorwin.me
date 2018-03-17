@@ -12,17 +12,17 @@ export const contact = {
 	linkedin: {
 		icon: 'fa fa-linkedin-square',
 		label: 'stephenjcorwin',
-		href: 'https://linkedin.com/in/stephenjcorwin/'
+		href: 'https://linkedin.com/in/stephenjcorwin'
 	},
 	github: {
 		icon: 'fa fa-github-square',
 		label: 'stephencorwin',
-		href: 'http://github.com/stephencorwin/'
+		href: 'https://github.com/stephencorwin'
 	},
 	twitter: {
 		icon: 'fa fa-twitter-square',
 		label: 'stephenjcorwin',
-		href: 'https://twitter.com/stephenjcorwin/'
+		href: 'https://twitter.com/stephenjcorwin'
 	}
 };
 

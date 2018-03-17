@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import Tile from '../Tile';
 
 export const PortfolioTile = ({ label, description, image, className }) => (
-	<Tile className={className} style={{ backgroundImage: `url('${image}')` }}>
-		<h4>{label}</h4>
-		<p>{description}</p>
-	</Tile>
+	<Tile
+		style={{ backgroundImage: `url('${image}')` }}
+		title={`${label} - ${description}`}
+		className={className}
+	/>
 );
 
 PortfolioTile.propTypes = {

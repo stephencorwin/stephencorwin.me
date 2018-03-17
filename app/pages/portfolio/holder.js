@@ -22,7 +22,7 @@ export const PortfolioHolder = ({ className }) => (
 						<PortfolioTile
 							label={item.label}
 							description={item.description}
-							image={item.image}
+							image={item.images[0]}
 						/>
 					</A>
 				</Col>

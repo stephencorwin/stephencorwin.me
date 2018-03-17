@@ -394,7 +394,8 @@ export default {
 			style: {
 				color: colors.white,
 				fontFamily: fontFamilies.scorewin,
-				fontSize: fontSizes.md
+				fontSize: fontSizes.md,
+				textTransform: 'none'
 			}
 		}
 	],

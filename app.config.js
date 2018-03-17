@@ -1,3 +1,5 @@
+import { colors, fontFamilies, fontSizes } from './app/styles/theme.styles';
+
 export const contact = {
 	phone: {
 		icon: 'fa fa-phone-square',
@@ -30,7 +32,7 @@ export const pages = {
 	home: {
 		route: {
 			href: '/',
-			label: 'home',
+			label: 'Stephen Corwin',
 			title: 'Stephen Corwin',
 			description: ''
 		}
@@ -388,7 +390,12 @@ export default {
 			href: 'https://scorewin.com/',
 			label: 'ScoreWin',
 			title: 'Stephen Corwin | ScoreWin',
-			description: ''
+			description: '',
+			style: {
+				color: colors.white,
+				fontFamily: fontFamilies.scorewin,
+				fontSize: fontSizes.md
+			}
 		}
 	],
 	contact

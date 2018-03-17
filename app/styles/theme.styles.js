@@ -18,7 +18,7 @@ export const colors = {
 	}),
 	blue: Object.assign(String('#1B365D'), {
 		base: '#1B365D',
-		light: '#2F486B',
+		light: '#264d85',
 		dark: '#193255'
 	}),
 	green: Object.assign(String('#4C7030'), {

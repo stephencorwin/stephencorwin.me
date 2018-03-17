@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Media from 'react-media';
 
-import config from '../../../../app.config';
+import config, { pages } from '../../../../app.config';
 import { breakpoints } from '../../../styles/theme.styles';
 import Layout from '../Layout';
 import Header from '../../Header';
@@ -18,7 +18,7 @@ export const Default = ({ route, className, children }) => (
 			{matches => (
 				<Choose>
 					<When condition={matches}>
-						<Sidebar>
+						<Sidebar headerRoute={pages.home.route}>
 							<Navigation routes={config.navigation} />
 						</Sidebar>
 					</When>
@@ -28,13 +28,7 @@ export const Default = ({ route, className, children }) => (
 				</Choose>
 			)}
 		</Media>
-		<Main>
-			<If condition={route.label}>
-				<h1>{route.label}</h1>
-			</If>
-
-			{children}
-		</Main>
+		<Main>{children}</Main>
 	</Layout>
 );
 

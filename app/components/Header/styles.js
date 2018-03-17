@@ -6,7 +6,7 @@ export const Header = Component => styled(Component)`
 	color: ${({ theme: { colors } }) => colors.white};
 	display: flex;
 	align-items: center;
-	padding: ${({ theme: { spacings } }) => spacings.xs};
+	padding: 0 ${({ theme: { spacings } }) => spacings.sm};
 	height: 50px;
 `;
 

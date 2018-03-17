@@ -8,7 +8,7 @@ import Layout from '../Layout';
 import Header from '../../Header';
 import Sidebar from '../../Sidebar';
 import Navigation from '../../Navigation';
-import Wrapper from '../../Wrapper';
+import Main from '../../Main';
 
 import RouteShape from '../../../prop-types/Route';
 
@@ -28,13 +28,13 @@ export const Default = ({ route, className, children }) => (
 				</Choose>
 			)}
 		</Media>
-		<Wrapper>
+		<Main>
 			<If condition={route.label}>
 				<h1>{route.label}</h1>
 			</If>
 
-			<div>{children}</div>
-		</Wrapper>
+			{children}
+		</Main>
 	</Layout>
 );
 

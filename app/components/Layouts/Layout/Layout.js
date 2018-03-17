@@ -6,7 +6,6 @@ import { ThemeProvider } from 'styled-components';
 import config from '../../../../app.config';
 import theme from '../../../styles/theme.styles';
 import RouteShape from '../../../prop-types/Route';
-import { Main } from './styles';
 
 export const Layout = ({ route, className, children }) => (
 	<ThemeProvider theme={theme}>
@@ -16,7 +15,7 @@ export const Layout = ({ route, className, children }) => (
 				<title>{route.title || config.title}</title>
 			</Head>
 
-			<Main className={className}>{children}</Main>
+			<div className={className}>{children}</div>
 		</Fragment>
 	</ThemeProvider>
 );

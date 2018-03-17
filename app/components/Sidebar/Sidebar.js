@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Sidebar = ({ className, children }) => <div className={className}>{children}</div>;
+export const Sidebar = ({ className, children }) => <aside className={className}>{children}</aside>;
 
 Sidebar.propTypes = {
 	className: PropTypes.string,

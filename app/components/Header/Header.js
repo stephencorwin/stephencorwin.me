@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Header = ({ className, children }) => <div className={className}>{children}</div>;
+export const Header = ({ className, children }) => (
+	<div className={className}>{children}</div>
+);
 
 Header.propTypes = {
 	className: PropTypes.string,

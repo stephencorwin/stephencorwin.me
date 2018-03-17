@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Main = ({ className, children }) => <main className={className}>{children}</main>;
+export const Main = ({ className, children }) => (
+	<main className={className}>{children}</main>
+);
 
 Main.propTypes = {
 	className: PropTypes.string,

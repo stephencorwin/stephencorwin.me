@@ -8,7 +8,11 @@ import Default from '../../components/Layouts/Default';
 const { items, route } = pages.portfolio;
 const getPortfolioItem = slug => items.find(item => item.slug === slug);
 
-export const PortfolioItem = ({ slug, portfolioItem = getPortfolioItem(slug), className }) => (
+export const PortfolioItem = ({
+	slug,
+	portfolioItem = getPortfolioItem(slug),
+	className
+}) => (
 	<Choose>
 		<When condition={portfolioItem}>
 			<Default

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const Page = Component => styled(Component)``;
+export const Layout = Component => styled(Component)``;
 
-export default Page;
+export default Layout;

@@ -13,7 +13,7 @@
 		},
 		"production": {
 			"plugins": [
-				["styled-components", { "ssr": true, "displayName": false, "preprocess": true } ]
+				["styled-components", { "ssr": true, "displayName": false, "preprocess": false } ]
 			]
 		}
 	}

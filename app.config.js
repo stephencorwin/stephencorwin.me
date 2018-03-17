@@ -13,6 +13,16 @@ export const contact = {
 		icon: 'fa fa-linkedin-square',
 		label: 'stephenjcorwin',
 		href: 'https://linkedin.com/in/stephenjcorwin/'
+	},
+	github: {
+		icon: 'fa fa-github-square',
+		label: 'stephencorwin',
+		href: 'http://github.com/stephencorwin/'
+	},
+	twitter: {
+		icon: 'fa fa-twitter-square',
+		label: 'stephenjcorwin',
+		href: 'https://twitter.com/stephenjcorwin/'
 	}
 };
 

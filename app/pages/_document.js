@@ -12,7 +12,9 @@ globalStyles();
 export default class MyDocument extends Document {
 	static async getInitialProps({ renderPage }) {
 		const sheet = new ServerStyleSheet();
-		const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
+		const page = renderPage(App => props =>
+			sheet.collectStyles(<App {...props} />)
+		);
 		const styleTags = sheet.getStyleElement();
 		return { ...page, styleTags };
 	}
@@ -23,7 +25,10 @@ export default class MyDocument extends Document {
 			<html lang="en-US">
 				<Head>
 					<meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1.0"
+					/>
 					<meta name="author" content={pkg.author} />
 
 					{styleTags}

@@ -38,7 +38,9 @@ const Server = () => {
 		nextApp.render(req, res, pages.portfolio.route.href, req.query)
 	);
 	app.get(`${pages.portfolio.route.href}/:slug`, (req, res) =>
-		nextApp.render(req, res, pages.portfolio.route.href, { slug: req.params.slug })
+		nextApp.render(req, res, pages.portfolio.route.href, {
+			slug: req.params.slug
+		})
 	);
 
 	// 404

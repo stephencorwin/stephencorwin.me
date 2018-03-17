@@ -11,7 +11,10 @@ export const Layout = ({ route, className, children }) => (
 	<ThemeProvider theme={theme}>
 		<Fragment>
 			<Head>
-				<meta name="description" content={route.description || config.description} />
+				<meta
+					name="description"
+					content={route.description || config.description}
+				/>
 				<title>{route.title || config.title}</title>
 			</Head>
 

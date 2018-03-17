@@ -19,7 +19,11 @@ export const PortfolioHolder = ({ className }) => (
 						href={{ pathname: route.href, query: { slug: item.slug } }}
 						as={`${route.href}/${item.slug}`}
 					>
-						<PortfolioTile label={item.label} description={item.description} image={item.image} />
+						<PortfolioTile
+							label={item.label}
+							description={item.description}
+							image={item.image}
+						/>
 					</A>
 				</Col>
 			</For>

@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	font-size: ${({ theme: { fontSizes } }) => fontSizes.md};
 	font-weight: ${({ theme: { fontWeights } }) => fontWeights.medium};
 	height: 70px;
 
 	a {
+		align-items: center;
+		display: flex;
+		justify-content: center;
 		color: ${({ theme: { colors } }) => colors.white};
+		width: 100%;
+		height: 100%;
 	}
 `;
 

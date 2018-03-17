@@ -40,7 +40,7 @@ export const pages = {
 	portfolio: {
 		route: {
 			href: '/portfolio',
-			label: 'portfolio',
+			label: 'Portfolio',
 			title: 'Stephen Corwin | Portfolio',
 			description: ''
 		},
@@ -362,7 +362,7 @@ export const pages = {
 	resume: {
 		route: {
 			href: '/resume',
-			label: 'resume',
+			label: 'Resume',
 			title: 'Stephen Corwin | Resume',
 			description: ''
 		}
@@ -382,7 +382,7 @@ export default {
 		pages.resume.route,
 		{
 			href: 'http://github.com/stephencorwin/',
-			label: 'open source',
+			label: 'Open Source',
 			title: 'Stephen Corwin | Open Source',
 			description: ''
 		},

@@ -7,24 +7,28 @@ export const NavLinks = styled.ul`
 `;
 
 export const NavLink = styled.li`
-	align-items: center;
-	display: flex;
 	font-size: ${({ theme: { fontSizes } }) => fontSizes.sm};
 	height: 60px;
 	width: 100%;
 
-	@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
-		justify-content: center;
-	}
-
 	a {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
 		color: ${({ theme: { colors } }) => colors.white.dark};
 		padding: 0 ${({ theme: { spacings } }) => spacings.sm};
 		transition: color 0.5s ease;
 		text-decoration: none;
+		text-transform: lowercase;
+		width: 100%;
+		height: 100%;
 
 		&:hover {
 			color: ${({ theme: { colors } }) => colors.white};
+		}
+
+		@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
+			justify-content: center;
 		}
 	}
 `;

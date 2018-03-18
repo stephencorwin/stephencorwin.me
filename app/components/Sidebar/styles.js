@@ -18,11 +18,15 @@ export const Header = styled.header`
 export const Sidebar = Component => styled(Component)`
 	background-color: ${({ theme: { colors } }) => colors.blue.dark};
 	box-shadow: ${({ theme: { shadows } }) => shadows.right};
-	display: flex;
+	display: none;
 	flex-direction: column;
 	height: 100%;
 	width: 300px;
 	min-width: 300px;
+
+	@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
+		display: flex;
+	}
 `;
 
 export default Sidebar;

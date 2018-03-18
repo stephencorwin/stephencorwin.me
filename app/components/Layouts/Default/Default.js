@@ -14,20 +14,21 @@ import RouteShape from '../../../prop-types/Route';
 
 export const Default = ({ route, className, children }) => (
 	<Layout className={className} route={route}>
-		<Media query={{ minWidth: breakpoints.sm.int }}>
-			{matches => (
-				<Choose>
-					<When condition={matches}>
-						<Sidebar headerRoute={pages.home.route}>
-							<Navigation routes={config.navigation} />
-						</Sidebar>
-					</When>
-					<Otherwise>
-						<Header>Header</Header>
-					</Otherwise>
-				</Choose>
+		{/* MOBILE */}
+		<Media
+			query={{ maxWidth: breakpoints.sm.int }}
+			render={() => <Header>Header</Header>}
+		/>
+
+		{/* OTHER */}
+		<Media
+			query={{ minWidth: breakpoints.sm.int }}
+			render={() => (
+				<Sidebar headerRoute={pages.home.route}>
+					<Navigation routes={config.navigation} />
+				</Sidebar>
 			)}
-		</Media>
+		/>
 		<Main>{children}</Main>
 	</Layout>
 );

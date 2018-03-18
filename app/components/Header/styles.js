@@ -8,6 +8,10 @@ export const Header = Component => styled(Component)`
 	align-items: center;
 	padding: 0 ${({ theme: { spacings } }) => spacings.sm};
 	height: 50px;
+
+	@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
+		display: none;
+	}
 `;
 
 export default Header;

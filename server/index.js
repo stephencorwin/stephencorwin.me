@@ -1,5 +1,6 @@
 import { createServer } from 'http';
 import express from 'express';
+import path from 'path';
 import next from 'next';
 import compression from 'compression';
 import zlib from 'zlib';
@@ -26,6 +27,11 @@ const Server = () => {
 	if (!dev) {
 		app.use(compression({ threshold: 0, level: zlib.Z_BEST_COMPRESSION }));
 	}
+
+	app.use(
+		'/_next/static',
+		express.static(path.join(__dirname, '../app/.next/static'))
+	);
 
 	// Health Check
 	app.get('/up', middleware.healthCheck);

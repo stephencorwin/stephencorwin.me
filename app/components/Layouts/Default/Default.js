@@ -17,7 +17,11 @@ export const Default = ({ route, className, children }) => (
 		{/* MOBILE */}
 		<Media
 			query={{ maxWidth: breakpoints.sm.int }}
-			render={() => <Header>Header</Header>}
+			render={() => (
+				<Header headerRoute={pages.home.route}>
+					<Navigation routes={config.navigation} />
+				</Header>
+			)}
 		/>
 
 		{/* OTHER */}

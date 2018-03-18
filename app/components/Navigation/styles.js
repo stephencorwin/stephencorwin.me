@@ -34,10 +34,9 @@ export const NavLink = styled.li`
 `;
 
 export const ActiveNavLink = styled(NavLink)`
-	background-color: ${({ theme: { colors } }) => colors.blue.light};
-	box-shadow: ${({ theme: { shadows } }) => shadows.default};
-
 	a {
+		background-color: ${({ theme: { colors } }) => colors.blue.light};
+		box-shadow: ${({ theme: { shadows } }) => shadows.right};
 		color: ${({ theme: { colors } }) => colors.white};
 	}
 `;

@@ -30,6 +30,10 @@ export default class MyDocument extends Document {
 						content="width=device-width, initial-scale=1.0"
 					/>
 					<meta name="author" content={pkg.author} />
+					<meta
+						name="google-site-verification"
+						content="4Mg1rWlMPCXNgG3n4tVLQVZvu96tOLb6U05sqeIkI6k"
+					/>
 
 					{styleTags}
 

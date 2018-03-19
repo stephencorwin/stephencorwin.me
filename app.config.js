@@ -11,15 +11,15 @@ export const contact = {
 		label: 'stephenjcorwin@gmail.com',
 		href: 'mailto:stephenjcorwin@gmail.com'
 	},
-	github: {
-		icon: 'fa fa-github-square',
-		label: 'stephencorwin',
-		href: 'https://github.com/stephencorwin'
-	},
 	linkedin: {
 		icon: 'fa fa-linkedin-square',
 		label: 'stephenjcorwin',
 		href: 'https://linkedin.com/in/stephenjcorwin'
+	},
+	github: {
+		icon: 'fa fa-github-square',
+		label: 'stephencorwin',
+		href: 'https://github.com/stephencorwin'
 	}
 };
 

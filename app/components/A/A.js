@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-export const A = ({ title, children, style, className, ...props }) => (
+export const A = ({ title, target, children, style, className, ...props }) => (
 	<Link {...props}>
-		<a title={title} style={style} className={className}>
+		<a title={title} target={target} style={style} className={className}>
 			{children}
 		</a>
 	</Link>
@@ -12,13 +12,15 @@ export const A = ({ title, children, style, className, ...props }) => (
 
 A.propTypes = {
 	title: PropTypes.string,
+	target: PropTypes.string,
 	style: PropTypes.objectOf(PropTypes.any),
 	className: PropTypes.string,
 	children: PropTypes.node
 };
 
 A.defaultProps = {
-	title: '',
+	title: undefined,
+	target: undefined,
 	className: '',
 	style: undefined,
 	children: undefined

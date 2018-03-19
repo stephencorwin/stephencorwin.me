@@ -14,14 +14,24 @@ export const Navigation = ({ router, routes, className }) => (
 					<Choose>
 						<When condition={router.pathname === route.href}>
 							<ActiveNavLink key={route.href}>
-								<A href={route.href} title={route.label} style={route.style}>
+								<A
+									href={route.href}
+									title={route.label}
+									style={route.style}
+									target={route.target}
+								>
 									{route.label}
 								</A>
 							</ActiveNavLink>
 						</When>
 						<Otherwise>
 							<NavLink key={route.href}>
-								<A href={route.href} title={route.label} style={route.style}>
+								<A
+									href={route.href}
+									title={route.label}
+									style={route.style}
+									target={route.target}
+								>
 									{route.label}
 								</A>
 							</NavLink>

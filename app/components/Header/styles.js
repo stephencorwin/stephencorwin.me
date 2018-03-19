@@ -30,7 +30,7 @@ export const Menu = styled.menu`
 	right: 0;
 	height: 100%;
 	width: 100%;
-	z-index: 1;
+	z-index: ${({ theme: { zindexes } }) => zindexes.header};
 `;
 
 export const Title = styled(A)`
@@ -43,6 +43,7 @@ export const Title = styled(A)`
 	font-weight: ${({ theme: { fontWeights } }) => fontWeights.medium};
 	height: 100%;
 	padding: 0 ${({ theme: { spacings } }) => spacings.sm};
+	white-space: nowrap;
 `;
 
 export const Header = Component => styled(Component)`

@@ -8,15 +8,20 @@ export const Main = Component => styled(Component)`
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
-	padding: 0 ${({ theme: { spacings } }) => spacings.sm};
+	padding-left: ${({ paddedX, theme: { spacings } }) =>
+		paddedX ? spacings.sm : 0};
+	padding-right: ${({ paddedX, theme: { spacings } }) =>
+		paddedX ? spacings.sm : 0};
 
 	/* firefox fix for padding around a flex element */
 	&::before,
 	&::after {
 		content: '';
 		display: block;
-		height: ${({ theme: { spacings } }) => spacings.sm};
-		min-height: ${({ theme: { spacings } }) => spacings.sm};
+		height: ${({ paddedY, theme: { spacings } }) =>
+			paddedY ? spacings.sm : 0};
+		min-height: ${({ paddedY, theme: { spacings } }) =>
+			paddedY ? spacings.sm : 0};
 	}
 `;
 

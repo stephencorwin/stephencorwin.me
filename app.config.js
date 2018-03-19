@@ -379,12 +379,19 @@ export default {
 	pages,
 	navigation: [
 		pages.portfolio.route,
-		pages.resume.route,
 		{
-			href: 'http://github.com/stephencorwin/',
+			href: 'https://github.com/stephencorwin/resume',
+			label: 'Resume',
+			title: 'Stephen Corwin | Resume',
+			description: '',
+			target: '_blank'
+		},
+		{
+			href: 'https://github.com/stephencorwin/',
 			label: 'Open Source',
 			title: 'Stephen Corwin | Open Source',
-			description: ''
+			description: '',
+			target: '_blank'
 		},
 		{
 			href: 'https://scorewin.com/',
@@ -396,7 +403,8 @@ export default {
 				fontFamily: fontFamilies.scorewin,
 				fontSize: fontSizes.md,
 				textTransform: 'none'
-			}
+			},
+			target: '_blank'
 		}
 	],
 	contact

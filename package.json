@@ -47,6 +47,7 @@
     "react-dom": "16.2.0",
     "react-media": "1.8.0",
     "react-responsive": "4.0.5",
+    "react-slick": "0.20.0",
     "react-styled-flexboxgrid": "2.1.1",
     "styled-components": "3.1.6",
     "url-loader": "1.0.1"

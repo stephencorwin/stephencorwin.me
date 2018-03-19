@@ -97,9 +97,18 @@ export const breakpoints = {
 	})
 };
 
+export const zindexes = {
+	base: '1',
+	controls: '100',
+	header: '200',
+	screen: '300',
+	overlay: '400'
+};
+
 export const shadows = {
 	default: '0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)',
-	right: '2px 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)'
+	right: '2px 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)',
+	text: '0 2px 2px #000000'
 };
 
 export default {
@@ -109,5 +118,6 @@ export default {
 	fontFamilies,
 	spacings,
 	breakpoints,
+	zindexes,
 	shadows
 };

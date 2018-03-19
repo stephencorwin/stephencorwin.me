@@ -4,6 +4,10 @@ import PropTypes from 'prop-types';
 import { pages } from '../../../app.config';
 import PortfolioItemShape from '../../prop-types/PortfolioItem';
 import Default from '../../components/Layouts/Default';
+import Wrapper from '../../components/Wrapper';
+import ImageSlider from '../../components/ImageSlider';
+import Title from '../../components/Title';
+import P, { DisabledP } from '../../components/P';
 
 const { items, route } = pages.portfolio;
 const getPortfolioItem = slug => items.find(item => item.slug === slug);
@@ -23,9 +27,19 @@ export const PortfolioItem = ({
 				})}
 				className={className}
 			>
-				<img src={portfolioItem.images[0]} alt={portfolioItem.label} />
-				<div>{portfolioItem.label}</div>
-				<div>{portfolioItem.description}</div>
+				<ImageSlider images={portfolioItem.images} />
+				<Wrapper>
+					<Title>{portfolioItem.label}</Title>
+
+					<Choose>
+						<When condition={portfolioItem.description}>
+							<P>{portfolioItem.description}</P>
+						</When>
+						<Otherwise>
+							<DisabledP>Description missing or unavailable...</DisabledP>
+						</Otherwise>
+					</Choose>
+				</Wrapper>
 			</Default>
 		</When>
 		<Otherwise>

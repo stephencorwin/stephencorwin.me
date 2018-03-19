@@ -12,7 +12,7 @@ import Main from '../../Main';
 
 import RouteShape from '../../../prop-types/Route';
 
-export const Default = ({ route, className, children }) => (
+export const Default = ({ route, className, children, ...other }) => (
 	<Layout className={className} route={route}>
 		{/* MOBILE */}
 		<Media
@@ -33,7 +33,7 @@ export const Default = ({ route, className, children }) => (
 				</Sidebar>
 			)}
 		/>
-		<Main>{children}</Main>
+		<Main {...other}>{children}</Main>
 	</Layout>
 );
 

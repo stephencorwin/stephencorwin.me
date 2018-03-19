@@ -2,15 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Media from 'react-media';
 
-import config, { pages } from '../../../../app.config';
+import config, { contact, pages } from '../../../../app.config';
 import { breakpoints } from '../../../styles/theme.styles';
 import Layout from '../Layout';
 import Header from '../../Header';
 import Sidebar from '../../Sidebar';
 import Navigation from '../../Navigation';
+import ContactLinks from '../../ContactLinks';
 import Main from '../../Main';
-
 import RouteShape from '../../../prop-types/Route';
+
+const contactLinks = Object.values(contact);
 
 export const Default = ({ route, className, children, ...other }) => (
 	<Layout className={className} route={route}>
@@ -20,6 +22,7 @@ export const Default = ({ route, className, children, ...other }) => (
 			render={() => (
 				<Header headerRoute={pages.home.route}>
 					<Navigation routes={config.navigation} />
+					<ContactLinks links={contactLinks} />
 				</Header>
 			)}
 		/>
@@ -30,6 +33,7 @@ export const Default = ({ route, className, children, ...other }) => (
 			render={() => (
 				<Sidebar headerRoute={pages.home.route}>
 					<Navigation routes={config.navigation} />
+					<ContactLinks links={contactLinks} />
 				</Sidebar>
 			)}
 		/>

@@ -41,6 +41,10 @@ export const ActiveNavLink = styled(NavLink)`
 	}
 `;
 
-export const Navigation = Component => styled(Component)``;
+export const Navigation = Component => styled(Component)`
+	flex-grow: 1;
+	overflow-x: hidden;
+	overflow-y: auto;
+`;
 
 export default Navigation;

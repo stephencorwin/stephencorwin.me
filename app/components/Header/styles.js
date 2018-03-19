@@ -20,7 +20,9 @@ export const Button = styled.button`
 export const Menu = styled.menu`
 	background-color: ${({ theme: { colors } }) => colors.blue};
 	border-top: 2px solid ${({ theme: { colors } }) => colors.blue.light};
-	margin: 0 0 ${size};
+	display: flex;
+	flex-direction: column;
+	margin: 0;
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
@@ -28,7 +30,6 @@ export const Menu = styled.menu`
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 100%;
 	width: 100%;
 	z-index: ${({ theme: { zindexes } }) => zindexes.header};
 `;

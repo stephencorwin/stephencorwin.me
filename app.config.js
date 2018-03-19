@@ -432,7 +432,9 @@ export default {
 				color: colors.white,
 				fontFamily: fontFamilies.scorewin,
 				fontSize: fontSizes.md,
-				textTransform: 'none'
+				textTransform: 'none',
+				'-webkit-font-smoothing': 'antialiased',
+				'moz-osx-font-smoothing': 'grayscale'
 			},
 			target: '_blank'
 		}

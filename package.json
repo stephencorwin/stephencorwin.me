@@ -8,6 +8,14 @@
   "description": "A personal website for publicizing blog posts, projects, and past achievements.",
   "author": "Stephen Corwin <stephenjcorwin@gmail.com> (https://stephencorwin.me/)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephencorwin/stephencorwin.me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stephencorwin/stephencorwin.me/issues"
+  },
+  "homepage": "https://github.com/stephencorwin/stephencorwin.me",
   "engines:": {
     "node": ">=8.0.0"
   },
@@ -32,6 +40,7 @@
   },
   "dependencies": {
     "@scorewin/font": "1.0.3",
+    "@stephencorwin/resume": "git://github.com/stephencorwin/resume",
     "@zeit/next-css": "0.1.4",
     "bluebird": "3.5.1",
     "chalk": "2.3.1",
@@ -43,8 +52,10 @@
     "lodash": "4.17.5",
     "next": "5.0.1-canary.16",
     "prop-types": "15.6.0",
+    "raw-loader": "0.5.1",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-markdown": "3.3.0",
     "react-media": "1.8.0",
     "react-responsive": "4.0.5",
     "react-slick": "0.20.0",

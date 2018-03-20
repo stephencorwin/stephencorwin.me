@@ -51,9 +51,15 @@ const Server = () => {
 	app.get(pages.home.route.href, (req, res) =>
 		nextApp.render(req, res, pages.home.route.href, req.query)
 	);
+
 	app.get(pages.portfolio.route.href, (req, res) =>
 		nextApp.render(req, res, pages.portfolio.route.href, req.query)
 	);
+
+	app.get(pages.resume.route.href, (req, res) =>
+		nextApp.render(req, res, pages.resume.route.href, req.query)
+	);
+
 	app.get(`${pages.portfolio.route.href}/:slug`, (req, res) =>
 		nextApp.render(req, res, pages.portfolio.route.href, {
 			slug: req.params.slug

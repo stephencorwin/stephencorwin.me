@@ -14,8 +14,18 @@ import RouteShape from '../../../prop-types/Route';
 
 const contactLinks = Object.values(contact);
 
-export const Default = ({ route, className, children, ...other }) => (
-	<Layout className={className} route={route}>
+export const Default = ({
+	route,
+	invertBackground,
+	className,
+	children,
+	...other
+}) => (
+	<Layout
+		className={className}
+		route={route}
+		invertBackground={invertBackground}
+	>
 		{/* MOBILE */}
 		<Media
 			query={{ maxWidth: breakpoints.sm.int }}
@@ -43,11 +53,13 @@ export const Default = ({ route, className, children, ...other }) => (
 
 Default.propTypes = {
 	route: RouteShape.isRequired,
+	invertBackground: PropTypes.bool,
 	className: PropTypes.string,
 	children: PropTypes.node
 };
 
 Default.defaultProps = {
+	invertBackground: false,
 	className: '',
 	children: undefined
 };

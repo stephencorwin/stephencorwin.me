@@ -7,6 +7,15 @@ module.exports = withCSS({
 
 	webpack: config => {
 		config.module.rules.push({
+			test: /\.md$/,
+			use: [
+				{
+					loader: 'raw-loader'
+				}
+			]
+		});
+
+		config.module.rules.push({
 			test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 			loader: 'url-loader?limit=10000&mimetype=application/font-woff',
 			options: {
@@ -26,10 +35,5 @@ module.exports = withCSS({
 		});
 		return config;
 	},
-	// Perform customizations to webpack config
-	// Important: return the modified config
-
-	// Perform customizations to webpack dev middleware config
-	// Important: return the modified config
 	webpackDevMiddleware: config => config
 });

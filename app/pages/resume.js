@@ -1,23 +1,25 @@
-import { Component } from 'react';
-import Router from 'next/router';
+import React from 'react';
+import PropTypes from 'prop-types';
+import Resume from '@stephencorwin/resume/export/stephen-corwin_resume.md';
 
-import { contact } from '../../app.config';
+import { pages } from '../../app.config';
+import Default from '../components/Layouts/Default';
+import MarkdownDocument from '../components/MarkdownDocument';
 
-// TODO: Will eventually have an assortment of things on the Home Page.
-// For now, we are just redirecting to the GitHub Repository.
-export class ResumePage extends Component {
-	static async getInitialProps({ res }) {
-		if (res) {
-			res.writeHead(302, {
-				Location: `${contact.github.href}/resume`
-			});
-			res.end();
-			res.finished = true;
-		} else {
-			Router.replace(`${contact.github.href}/resume`);
-		}
-		return {};
-	}
-}
+const { route } = pages.resume;
+
+export const ResumePage = ({ className }) => (
+	<Default route={route} className={className} invertBackground paddedX paddedY>
+		<MarkdownDocument source={Resume} />
+	</Default>
+);
+
+ResumePage.propTypes = {
+	className: PropTypes.string
+};
+
+ResumePage.defaultProps = {
+	className: ''
+};
 
 export default ResumePage;

@@ -10,7 +10,7 @@ import A from '../../components/A';
 const { route } = pages.portfolio;
 
 export const PortfolioHolder = ({ className }) => (
-	<Default route={route} className={className} paddedX paddedY>
+	<Default route={route} className={className} invertBackground paddedX paddedY>
 		<Row>
 			<For each="item" of={pages.portfolio.items}>
 				<Col xs={12} sm={6} lg={3} key={item.slug}>

@@ -29,8 +29,19 @@ const Server = () => {
 	}
 
 	app.use(
+		'/static',
+		express.static(path.join(__dirname, '../app/static'), {
+			maxAge: '365d',
+			immutable: true
+		})
+	);
+
+	app.use(
 		'/_next/static',
-		express.static(path.join(__dirname, '../app/.next/static'))
+		express.static(path.join(__dirname, '../app/.next/static'), {
+			maxAge: '1d',
+			immutable: true
+		})
 	);
 
 	// Health Check

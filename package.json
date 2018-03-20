@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@scorewin/font": "1.0.3",
-    "@stephencorwin/resume": "git://github.com/stephencorwin/resume",
+    "@stephencorwin/resume": "1.0.2",
     "@zeit/next-css": "0.1.4",
     "bluebird": "3.5.1",
     "chalk": "2.3.1",
@@ -88,6 +88,6 @@
   "now": {
     "name": "stephencorwin.me",
     "alias": "stephencorwin.me",
-    "pubic": "false"
+    "public": "false"
   }
 }

@@ -9,7 +9,7 @@ import MarkdownDocument from '../components/MarkdownDocument';
 const { route } = pages.resume;
 
 export const ResumePage = ({ className }) => (
-	<Default route={route} className={className} invertBackground paddedX paddedY>
+	<Default route={route} className={className} invertBackground paddedx paddedy>
 		<MarkdownDocument source={Resume} />
 	</Default>
 );

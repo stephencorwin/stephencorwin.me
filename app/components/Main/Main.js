@@ -1,26 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Main = ({ className, children, ...props }) => (
-	<main className={className} {...props}>
+export const Main = ({ className, children, paddedx, paddedy, ...props }) => (
+	<main
+		className={className}
+		paddedx={paddedx.toString()}
+		paddedy={paddedy.toString()}
+		{...props}
+	>
 		{children}
 	</main>
 );
 
 Main.propTypes = {
-	// eslint-disable-next-line react/no-unused-prop-types
-	paddedX: PropTypes.bool,
-
-	// eslint-disable-next-line react/no-unused-prop-types
-	paddedY: PropTypes.bool,
-
+	paddedx: PropTypes.bool,
+	paddedy: PropTypes.bool,
 	className: PropTypes.string,
 	children: PropTypes.node
 };
 
 Main.defaultProps = {
-	paddedX: false,
-	paddedY: false,
+	paddedx: false,
+	paddedy: false,
 	className: '',
 	children: undefined
 };

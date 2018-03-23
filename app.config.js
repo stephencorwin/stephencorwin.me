@@ -41,6 +41,40 @@ export const pages = {
 		},
 		items: [
 			{
+				slug: 'holiday-retirement',
+				label: 'Holiday Retirement Art Portal',
+				client: 'The Tiber Group',
+				description: '',
+				startDate: '',
+				endDate: '',
+				references: [],
+				tags: ['node.js', 'angular-2', 'sass'],
+				images: ['/static/portfolio/holiday-retirement/logo.png']
+			},
+			{
+				slug: 'gulp-dashboard',
+				label: '@stephencorwin/gulp-dashboard',
+				client: 'Personal',
+				description: 'A dashboard for displaying the status of tasks.',
+				startDate: '',
+				endDate: '',
+				references: [],
+				tags: ['gulp', 'npm'],
+				images: ['/static/logos/third-party/gulp.png']
+			},
+			{
+				slug: 'sass-core',
+				label: '@stephencorwin/sass-core',
+				client: 'Personal',
+				description:
+					'SASS framework which implements generators, constructors, and modules.',
+				startDate: '',
+				endDate: '',
+				references: [],
+				tags: ['sass', 'npm'],
+				images: ['/static/logos/third-party/sass.png']
+			},
+			{
 				slug: 'metronaps-scheduling-ios-app',
 				label: 'MetroNaps Scheduling IOS App',
 				client: 'Millennial Media',
@@ -434,8 +468,8 @@ export default {
 				fontFamily: fontFamilies.scorewin,
 				fontSize: fontSizes.md,
 				textTransform: 'none',
-				'-webkit-font-smoothing': 'antialiased',
-				'moz-osx-font-smoothing': 'grayscale'
+				WebkitFontSmoothing: 'antialiased',
+				MozOsxFontSmoothing: 'grayscale'
 			},
 			target: '_blank'
 		}

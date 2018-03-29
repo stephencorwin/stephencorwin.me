@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faBars from '@fortawesome/fontawesome-free-solid/faBars';
+import faTimes from '@fortawesome/fontawesome-free-solid/faTimes';
 
 import RouteShape from '../../prop-types/Route';
 import { Button, Menu, Title } from './styles';
@@ -7,9 +10,9 @@ import { Button, Menu, Title } from './styles';
 export class Header extends Component {
 	static propTypes = {
 		headerRoute: RouteShape,
-		openIcon: PropTypes.string,
+		openIcon: FontAwesomeIcon.propTypes.icon,
 		openTooltip: PropTypes.string,
-		closeIcon: PropTypes.string,
+		closeIcon: FontAwesomeIcon.propTypes.icon,
 		closeTooltip: PropTypes.string,
 		className: PropTypes.string,
 		children: PropTypes.node
@@ -17,9 +20,9 @@ export class Header extends Component {
 
 	static defaultProps = {
 		headerRoute: undefined,
-		openIcon: 'fa fa-bars',
+		openIcon: faBars,
 		openTooltip: 'Open Menu',
-		closeIcon: 'fa fa-close',
+		closeIcon: faTimes,
 		closeTooltip: 'Close Menu',
 		className: '',
 		children: undefined
@@ -52,7 +55,7 @@ export class Header extends Component {
 					onClick={() => this.setState({ menuToggle: !menuToggle })}
 					title={menuToggle ? closeTooltip : openTooltip}
 				>
-					<i className={menuToggle ? closeIcon : openIcon} />
+					<FontAwesomeIcon icon={menuToggle ? closeIcon : openIcon} />
 				</Button>
 				<If condition={menuToggle}>
 					<Menu>{children}</Menu>

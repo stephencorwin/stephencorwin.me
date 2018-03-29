@@ -12,7 +12,7 @@ export const ContactLinks = ({ links, className }) => (
 				<For each="link" of={links}>
 					<Link key={link.href}>
 						<A href={link.href} title={link.label} target="_blank">
-							<Icon className={link.icon} />
+							<Icon icon={link.icon} />
 							{link.label}
 						</A>
 					</Link>

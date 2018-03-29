@@ -108,7 +108,8 @@ export const zindexes = {
 export const shadows = {
 	default: '0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)',
 	right: '2px 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12)',
-	text: '0 2px 2px #000000'
+	text: '0 2px 2px #000000',
+	textLight: '1px 1px 1px #000000'
 };
 
 export default {

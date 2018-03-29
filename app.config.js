@@ -1,23 +1,27 @@
+import phoneSquare from '@fortawesome/fontawesome-free-solid/faPhoneSquare';
+import envelopeSquare from '@fortawesome/fontawesome-free-solid/faEnvelopeSquare';
+import linkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
+import githubSquare from '@fortawesome/fontawesome-free-brands/faGithubSquare';
 import { colors, fontFamilies, fontSizes } from './app/styles/theme.styles';
 
 export const contact = {
 	phone: {
-		icon: 'fa fa-phone-square',
+		icon: phoneSquare,
 		label: '919.478.1889',
 		href: 'tel:9194781889'
 	},
 	email: {
-		icon: 'fa fa-envelope-square',
+		icon: envelopeSquare,
 		label: 'stephenjcorwin@gmail.com',
 		href: 'mailto:stephenjcorwin@gmail.com'
 	},
 	linkedin: {
-		icon: 'fa fa-linkedin-square',
+		icon: linkedin,
 		label: 'stephenjcorwin',
 		href: 'https://linkedin.com/in/stephenjcorwin'
 	},
 	github: {
-		icon: 'fa fa-github-square',
+		icon: githubSquare,
 		label: 'stephencorwin',
 		href: 'https://github.com/stephencorwin'
 	}

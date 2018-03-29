@@ -1,10 +1,6 @@
 const withCSS = require('@zeit/next-css');
 
 module.exports = withCSS({
-	exportPathMap: () => ({
-		'/': { page: '/' }
-	}),
-
 	webpack: config => {
 		config.module.rules.push({
 			test: /\.md$/,

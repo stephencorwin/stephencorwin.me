@@ -23,6 +23,7 @@ export const Sidebar = Component => styled(Component)`
 	height: 100%;
 	width: 300px;
 	min-width: 300px;
+	z-index: ${({ theme: { zindexes } }) => zindexes.base};
 
 	@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
 		display: flex;

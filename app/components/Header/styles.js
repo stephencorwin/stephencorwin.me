@@ -53,6 +53,7 @@ export const Header = Component => styled(Component)`
 	display: flex;
 	height: ${size};
 	min-height: ${size};
+	z-index: ${({ theme: { zindexes } }) => zindexes.header};
 
 	@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
 		display: none;

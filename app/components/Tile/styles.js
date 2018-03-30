@@ -5,8 +5,8 @@ const config = {
 };
 
 export const Tile = Component => styled(Component)`
-	background-color: ${({ theme: { colors } }) => colors.white};
-	box-shadow: ${({ theme: { shadows } }) => shadows.default};
+	background-color: ${({ theme }) => theme.colors.white};
+	box-shadow: ${({ theme }) => theme.shadows.default};
 	height: ${config.size};
 	width: 100%;
 `;

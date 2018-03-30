@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const MarkdownDocument = Component => styled(Component)`
-	background-color: ${({ theme: { colors } }) => colors.white};
+	background-color: ${({ theme }) => theme.colors.white};
 	box-sizing: border-box;
-	box-shadow: ${({ theme: { shadows } }) => shadows.default};
+	box-shadow: ${({ theme }) => theme.shadows.default};
 	margin: 0 auto;
-	max-width: ${({ theme: { breakpoints } }) => breakpoints.lg};
-	padding: ${({ theme: { spacings } }) => `${spacings.md} ${spacings.lg}`};
+	max-width: ${({ theme }) => theme.breakpoints.lg};
+	padding: ${({ theme }) => `${theme.spacings.md} ${theme.spacings.lg}`};
 	width: 100%;
 
 	blockquote {

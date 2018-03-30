@@ -5,8 +5,8 @@ export const PortfolioTile = Component => styled(Component)`
 	background-size: cover;
 	background-position: center;
 	box-sizing: border-box;
-	padding: ${({ theme: { spacings } }) => spacings.xs};
-	color: ${({ theme: { colors } }) => colors.white};
+	padding: ${({ theme }) => theme.spacings.xs};
+	color: ${({ theme }) => theme.colors.white};
 `;
 
 export default PortfolioTile;

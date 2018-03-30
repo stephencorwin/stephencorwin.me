@@ -7,7 +7,7 @@ export const NavLinks = styled.ul`
 `;
 
 export const NavLink = styled.li`
-	font-size: ${({ theme: { fontSizes } }) => fontSizes.sm};
+	font-size: ${({ theme }) => theme.fontSizes.sm};
 	height: 60px;
 	width: 100%;
 
@@ -15,8 +15,8 @@ export const NavLink = styled.li`
 		align-items: center;
 		box-sizing: border-box;
 		display: flex;
-		color: ${({ theme: { colors } }) => colors.white.dark};
-		padding: 0 ${({ theme: { spacings } }) => spacings.sm};
+		color: ${({ theme }) => theme.colors.white.dark};
+		padding: 0 ${({ theme }) => theme.spacings.sm};
 		transition: color 0.5s ease;
 		text-decoration: none;
 		text-transform: lowercase;
@@ -24,10 +24,10 @@ export const NavLink = styled.li`
 		height: 100%;
 
 		&:hover {
-			color: ${({ theme: { colors } }) => colors.white};
+			color: ${({ theme }) => theme.colors.white};
 		}
 
-		@media (min-width: ${({ theme: { breakpoints } }) => breakpoints.sm}) {
+		@media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 			justify-content: center;
 		}
 	}
@@ -35,9 +35,9 @@ export const NavLink = styled.li`
 
 export const ActiveNavLink = styled(NavLink)`
 	a {
-		background-color: ${({ theme: { colors } }) => colors.blue.light};
-		box-shadow: ${({ theme: { shadows } }) => shadows.right};
-		color: ${({ theme: { colors } }) => colors.white};
+		background-color: ${({ theme }) => theme.colors.blue.light};
+		box-shadow: ${({ theme }) => theme.shadows.right};
+		color: ${({ theme }) => theme.colors.white};
 	}
 `;
 

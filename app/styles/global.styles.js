@@ -17,4 +17,13 @@ export default () => injectGlobal`
 	body {
 		margin: 0;
 	}
+
+	/* fix for FOUC */
+	.svg-inline--fa {
+		display: inline-block;
+		font-size: inherit;
+		height: 1em;
+		overflow: visible;
+		vertical-align: -.125em;
+	}
 `;

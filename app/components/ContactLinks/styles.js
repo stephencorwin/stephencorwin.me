@@ -20,9 +20,6 @@ export const Link = styled.li`
 	display: block;
 	font-size: ${({ theme: { fontSizes } }) => fontSizes.xs};
 	width: 100%;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
 
 	a {
 		align-items: center;

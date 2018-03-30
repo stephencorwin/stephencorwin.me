@@ -1,18 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 export const NavBtn = ({ icon, ...props }) => (
 	<button {...props}>
-		<i className={icon} />
+		<FontAwesomeIcon icon={icon} />
 	</button>
 );
 
 NavBtn.propTypes = {
-	icon: PropTypes.string
-};
-
-NavBtn.defaultProps = {
-	icon: ''
+	// eslint-disable-next-line react/no-typos
+	icon: FontAwesomeIcon.propTypes.icon.isRequired
 };
 
 export default NavBtn;

@@ -41,7 +41,7 @@ export const Title = styled(A)`
 	display: flex;
 	flex-grow: 1;
 	font-size: ${({ theme }) => theme.fontSizes.md};
-	font-weight: ${({ theme: { fontWeights } }) => fontWeights.medium};
+	font-weight: ${({ theme }) => theme.fontWeights.medium};
 	height: 100%;
 	padding: 0 ${({ theme }) => theme.spacings.sm};
 	white-space: nowrap;

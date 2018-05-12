@@ -44,7 +44,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
     "@fortawesome/react-fontawesome": "0.0.18",
     "@scorewin/font": "1.0.3",
-    "@stephencorwin/resume": "1.0.2",
+    "@stephencorwin/resume": "1.0.3",
     "@zeit/next-css": "^0.1.5",
     "bluebird": "3.5.1",
     "chalk": "2.3.1",
@@ -90,6 +90,6 @@
   "now": {
     "name": "stephencorwin.me",
     "alias": "stephencorwin.me",
-    "public": "false"
+    "public": false
   }
 }
